@@ -45,11 +45,11 @@ Run this command in the command prompt.
 > python ai_learner.py [OPTIONS]
 
 #### Options:
-	>-s N | --size=N: Cube size (number of squares per edge). Default: 2
-	>-l N | --layers=N: Number of layers in the neural network. Default: 3
-	>--seed=N: Set the RNG seed
-	>--random: Only use random choice
-	>-h | --help: Display the help page and exit
+	-s N | --size=N: Cube size (number of squares per edge). Default: 2
+	-l N | --layers=N: Number of layers in the neural network. Default: 3
+	--seed=N: Set the RNG seed
+	--random: Only use random choice
+	-h | --help: Display the help page and exit
 	
 #### To run the SARSA Algorithm.
 
