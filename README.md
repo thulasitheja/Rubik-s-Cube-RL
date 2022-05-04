@@ -30,6 +30,11 @@ It does not require a model of the environment (hence "model-free"), and it can 
 For any finite Markov decision process (FMDP), Q-learning finds an optimal policy in the sense of maximizing the expected value of the total reward over any and all successive steps, starting from the current state.
 Q-learning can identify an optimal action-selection policy for any given FMDP, given infinite exploration time and a partly-random policy.
 "Q" refers to the function that the algorithm computes the expected rewards for an action taken in a given state.
+ There are two simple rules in place and reward system defined, to expedite the learning:
+ 1. Don't counter the previous rotation
+ 2. Don't make the same rotation 4 times consecutively
+ 3. The current reward system primarily focuses on the number of entirely-correct blocks.
+
 
 > ### SARSA:
 >>State–action–reward–state–action (SARSA) is an algorithm for learning a Markov decision process policy, used in the reinforcement learning area of machine learning.
@@ -83,5 +88,12 @@ The SARSA gives an expected cube in 11 episodes and the last episode is 73 as sh
 
 SARSA is preferable over Q Learning to minimize errors. If we want to fast in a fast-iterating environment, QL should be your choice. However, if mistakes are costly then SARSA is the better option. If your state space is too large, try exploring the deep q network.
 
+## References:
 
-
+1. http://artint.info/html/ArtInt_272.html
+2. https://dalspace.library.dal.ca/bitstream/handle/10222/72115/Smith-Robert-MCSC-CSCIAugust-
+2016.pdf?sequence=3
+3. https://www.youtube.com/watch?v=FhSaHuC0u2M&ab_channel=PankajPorwal
+4. https://www.wikiwand.com/en/Rubik%27s_Cube
+5. https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56#:~:text=Q%2Dlearning%20and%20making%20updates&text=The%20first%20is%20to%20use,us%20to%20make%20a%20decision.
+6. https://en.wikipedia.org/wiki/Q-learning
