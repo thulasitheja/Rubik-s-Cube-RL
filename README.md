@@ -1,7 +1,7 @@
 # Rubik's Cube
 The Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and professor of architecture Ernő Rubik.
 
-### Move notation:
+## Move notation:
 Many 3×3×3 Rubik's Cube enthusiasts use a notation developed by David Singmaster to denote a sequence of moves, referred to as "Singmaster notation". 
 Its relative nature allows algorithms to be written in such a way that they can be applied regardless of which side is designated the top or how the colours are organised on a particular cube.
 
@@ -21,38 +21,38 @@ Its relative nature allows algorithms to be written in such a way that they can 
 * y (rotate): rotate the entire Cube on U
 * z (rotate): rotate the entire Cube on F
 
-### Algorithms used:
+## Algorithms used:
 We created 2 ML agents using Deep Q-Learning and SARSA(State Action Reward State Action)
 
 > ### Deep Q-Learning:
-Q-learning is a model-free reinforcement learning algorithm to learn the value of an action in a particular state. 
+>>Q-learning is a model-free reinforcement learning algorithm to learn the value of an action in a particular state. 
 It does not require a model of the environment (hence "model-free"), and it can handle problems with stochastic transitions and rewards without requiring adaptations.
 For any finite Markov decision process (FMDP), Q-learning finds an optimal policy in the sense of maximizing the expected value of the total reward over any and all successive steps, starting from the current state.
 Q-learning can identify an optimal action-selection policy for any given FMDP, given infinite exploration time and a partly-random policy.
-"Q" refers to the function that the algorithm computes – the expected rewards for an action taken in a given state.
+"Q" refers to the function that the algorithm computes the expected rewards for an action taken in a given state.
 
 > ### SARSA:
-State–action–reward–state–action (SARSA) is an algorithm for learning a Markov decision process policy, used in the reinforcement learning area of machine learning.
+>>State–action–reward–state–action (SARSA) is an algorithm for learning a Markov decision process policy, used in the reinforcement learning area of machine learning.
 A SARSA agent interacts with the environment and updates the policy based on actions taken, hence this is known as an on-policy learning algorithm. 
 The Q value for a state-action is updated by an error, adjusted by the learning rate alpha. 
 Q values represent the possible reward received in the next time step for taking action a in state s, plus the discounted future reward received from the next state-action observation.
 
-### Instructions to run the code:
+## Instructions to run the code:
 
-#### To run the Deep Q-Learning Algorithm. 
+### To run the Deep Q-Learning Algorithm. 
 Run this command in the command prompt.
 
-> python ai_learner.py [OPTIONS]
+`python ai_learner.py [OPTIONS]`
 
-#### Options:
+### Options:
 	-s N | --size=N: Cube size (number of squares per edge). Default: 2
 	-l N | --layers=N: Number of layers in the neural network. Default: 3
 	--seed=N: Set the RNG seed
 	--random: Only use random choice
 	-h | --help: Display the help page and exit
 	
-#### To run the SARSA Algorithm.
+### To run the SARSA Algorithm.
 
-> python Run.py 
+`python Run.py`
 
 It will display the goal state and ask the user to input the number of moves by which it will scramble the goal state to a start state .
