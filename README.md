@@ -1,4 +1,4 @@
-Rubik's Cube:
+######Rubik's Cube:
 The Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and professor of architecture Ernő Rubik.
 
 Move notation:
