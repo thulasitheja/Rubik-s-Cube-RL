@@ -42,7 +42,7 @@ Q values represent the possible reward received in the next time step for taking
 #### To run the Deep Q-Learning Algorithm. 
 Run this command in the command prompt.
 
-python ai_learner.py [OPTIONS]
+> python ai_learner.py [OPTIONS]
 
 #### Options:
 	>-s N | --size=N: Cube size (number of squares per edge). Default: 2
@@ -53,6 +53,6 @@ python ai_learner.py [OPTIONS]
 	
 #### To run the SARSA Algorithm.
 
-python Run.py 
+> python Run.py 
 
 It will display the goal state and ask the user to input the number of moves by which it will scramble the goal state to a start state .
